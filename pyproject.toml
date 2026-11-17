@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-agent-flow"
+version = "0.1.0"
+description = "Voice agent call-flow state machine with latency budgets, barge-in, escalation and transcript QA scoring"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+voiceflow = "voiceflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
